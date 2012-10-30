@@ -3,7 +3,7 @@
 </head>
 	<body>
 		<h2>Summary</h2>
-		This script is intended to install Etherpad-Lite on to a Raspberry Pi running Raspian/Raspbian. It relies on bash, access to internet, and root privileges.
+		Etherpad-lite is web-based synchronous collaboration software for writers and coders. It is extensible. It is embeddable. It tracks revisions. It can be secured. This script is intended to install Etherpad-Lite on to a Raspberry Pi running Raspian/Raspbian. It relies on bash, access to internet, and root privileges.
 		<h2>What it Does</h2>
 		<ul>
 			<li>Checks to make sure it's being run with root privileges
