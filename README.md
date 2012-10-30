@@ -2,6 +2,8 @@
 <head>
 </head>
 	<body>
+		<h2>Reference</h2>
+		<p>I relied on the information and code here: https://github.com/Pita/etherpad-lite/wiki/How-to-deploy-Etherpad-Lite-as-a-service</p>
 		<h2>Summary</h2>
 		Etherpad-lite is web-based synchronous collaboration software for writers and coders. It is extensible. It is embeddable. It tracks revisions. It can be secured. This script is intended to install Etherpad-Lite on to a Raspberry Pi running Raspian/Raspbian. It relies on bash, access to internet, and root privileges.
 		<h2>What it Does</h2>
