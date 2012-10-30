@@ -17,7 +17,7 @@
 		</ul>
 		<h2>Usage</h2>
 		<ol>
-			<li>Download the script. It's available here on github using git. You'll need git later, so: sudo apt-get install git. Then use git clone git://github.com/ghoulmann/NAME.git. Or you can download and then unzip Name of file.zip.
+			<li>Download the script. It's available here on github using git. You'll need git later, so: sudo apt-get install git. Then use git clone git://github.com/ghoulmann/raspi-etherpad-lite.git. Or you can download and then unzip Name of file.zip.
 			<li>Edit install_raspi_etherpad-lite with the text editor you're most comfortable with. Nano, leafpad, vi, emacs will all do. e.g. nano ./install_raspi_etherpad-lite. Edit the values for the port and the target directory: the defaults work, but the flexibility is there if you want it.
 			<li>Run the script with root privileges. It should already be executeable. If not, sudo chmod +x ./install_raspi_etherpad-lite . Then do sudo ./install_raspi_etherpad-lite .
 		</ol>
