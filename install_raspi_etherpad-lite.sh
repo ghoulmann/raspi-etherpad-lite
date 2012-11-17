@@ -28,7 +28,7 @@ install ()
 install gzip git-core curl python libssl-dev pkg-config build-essential npm nodejs
 
 #git-clone to /opt/etherpad-lite
-git://github.com/ether/etherpad-lite.git $target
+git clone git://github.com/ether/etherpad-lite.git $target
 
 #Create settings.json
 cp $target/settings.json.template $target/settings.json
