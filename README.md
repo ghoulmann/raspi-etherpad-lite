@@ -23,6 +23,7 @@
 			<li>Edit install_raspi_etherpad-lite with the text editor you're most comfortable with. Nano, leafpad, vi, emacs will all do. e.g. nano ./install_raspi_etherpad-lite. Edit the values for the port and the target directory: the defaults work, but the flexibility is there if you want it.
 			<li>Run the script with root privileges. It should already be executeable. If not, sudo chmod +x ./install_raspi_etherpad-lite . Then do sudo ./install_raspi_etherpad-lite .
 		</ol>
-<p>The etherpad-lite service should start automatically next time you boot. If, however, you'd like to start it immediately, do sudo service etherpad-lite start.
+<p>The etherpad-lite service should start automatically next time you boot. If, however, you'd like to start it immediately, do sudo service etherpad-lite start.</p>
+<p> 2013/10/20 : removal of npm and node install from distribution, in order to use node v0.8.25 as etherpad-lite require v0.8.x minimum. -- DavidDelon </p>
 	</body>
 </html>

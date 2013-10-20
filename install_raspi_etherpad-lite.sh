@@ -25,7 +25,12 @@ install ()
         install $@
 }
 
-install gzip git-core curl python libssl-dev pkg-config build-essential npm nodejs
+install gzip git-core curl python libssl-dev pkg-config build-essential 
+
+# install nodejs v.0.8.25 for arm, as etherpad-lite require nodejs v.0.8.x 
+wget https://gist.github.com/raw/3245130/v0.8.25/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz -O /tmp/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz
+(cd /usr/local/ ; tar -xvzf /tmp/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz --strip=1)
+rm -f /tmp/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz
 
 #git-clone to /opt/etherpad-lite
 git clone git://github.com/ether/etherpad-lite.git $target
