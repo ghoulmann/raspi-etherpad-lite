@@ -22,8 +22,8 @@
 			<li>Download the script. It's available here on github using git. You'll need git later, so: sudo apt-get install git. Then use git clone git://github.com/ghoulmann/raspi-etherpad-lite.git. Or you can download and then unzip Name of file.zip.
 			<li>Edit install_raspi_etherpad-lite with the text editor you're most comfortable with. Nano, leafpad, vi, emacs will all do. e.g. nano ./install_raspi_etherpad-lite. Edit the values for the port and the target directory: the defaults work, but the flexibility is there if you want it.
 			<li>Run the script with root privileges. It should already be executeable. If not, sudo chmod +x ./install_raspi_etherpad-lite . Then do sudo ./install_raspi_etherpad-lite .
+      <li>2013/10/20 : removal of npm and node install from distribution, in order to use node v0.8.25 as etherpad-lite require v0.8.x minimum. -- DavidDelon
 		</ol>
-<p>The etherpad-lite service should start automatically next time you boot. If, however, you'd like to start it immediately, do sudo service etherpad-lite start.</p>
-<p> 2013/10/20 : removal of npm and node install from distribution, in order to use node v0.8.25 as etherpad-lite require v0.8.x minimum. -- DavidDelon </p>
+<p>The etherpad-lite service should start automatically next time you boot. If, however, you'd like to start it immediately, do sudo service etherpad-lite start.
 	</body>
 </html>
