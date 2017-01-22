@@ -3,7 +3,7 @@
 ##########CONFIGURE############
 #Set full path to install directory
 target=/opt/etherpad-lite
-port=8080 #must be above 1024
+port=1555
 ###############################
 
 
@@ -25,11 +25,11 @@ install ()
         install $@
 }
 
-install gzip git-core curl python libssl-dev pkg-config build-essential 
+install gzip git-core curl python libssl-dev pkg-config build-essential
 
-# install nodejs v.0.8.25 for arm, as etherpad-lite require nodejs v.0.8.x 
-wget https://gist.github.com/raw/3245130/v0.8.25/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz -O /tmp/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz
-(cd /usr/local/ ; tar -xvzf /tmp/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz --strip=1)
+# install nodejs v.0.8.25 for arm, as etherpad-lite require nodejs v.0.8.x
+wget https://gist.github.com/raw/3245130/v0.10.24/node-v0.10.24-linux-arm-armv6j-vfp-hard.tar.gz -O /tmp/node-v0.10.24-linux-arm-armv6j-vfp-hard.tar.gz
+(cd /usr/local/ ; tar -xvzf /tmp/node-v0.10.24-linux-arm-armv6j-vfp-hard.tar.gz --strip=1)
 rm -f /tmp/node-v0.8.25-linux-arm-armv6j-vfp-hard.tar.gz
 
 #git-clone to /opt/etherpad-lite
@@ -81,7 +81,7 @@ set -e
 
 start() {
   echo "Starting $DESC... "
-  
+
 	start-stop-daemon --start --chuid "$USER:$GROUP" --background --make-pidfile --pidfile /var/run/$NAME.pid --exec $EPLITE_DIR/$EPLITE_BIN -- $LOGFILE || true
   echo "done"
 }
@@ -141,4 +141,3 @@ chmod +x /etc/init.d/etherpad-lite
 
 #Configure as a service
 update-rc.d etherpad-lite defaults
-
